@@ -21,7 +21,7 @@ jobs:
     - name: Setup Expo
       uses: expo/expo-github-action@v8
       with:
-        expo-version: latest
+        eas-version: latest
         token: ${{ secrets.EXPO_TOKEN }}
 
     - name: Install dependencies
@@ -31,13 +31,9 @@ jobs:
       run: |
         echo "${{ secrets.FIREBASE_CONFIG }}" > ./config/firebase.ts
 
-    - name: Build iOS
-      run: |
-        expo build:ios --non-interactive
+    - name: Build on EAS
+      run: eas build --platform all --non-interactive --no-wait
 
-    - name: Deploy to Expo
-      run: |
-        expo publish --non-interactive
 
     - name: Create Release
       id: create_release
