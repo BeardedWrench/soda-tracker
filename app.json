@@ -36,6 +36,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "07a4a8a8-d083-4f47-bb90-50e76399c28f"
+      }
+    },
+    "owner": "beardedwrench"
   }
 }
