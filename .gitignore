@@ -1,0 +1,40 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+*.pem
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+firebase-config.ts
+!firebase-config.example.ts
+
+# local development
+*.log
+.expo-shared/
+
+# typescript
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# testing
+coverage/

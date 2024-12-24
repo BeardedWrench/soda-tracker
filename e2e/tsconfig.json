@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es2018",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    },
+    "typeRoots": [
+      "./types",
+      "../node_modules/@types"
+    ],
+    "types": [
+      "node",
+      "jest",
+      "detox"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "types/**/*.d.ts"
+  ]
+}
