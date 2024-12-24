@@ -31,10 +31,6 @@ jobs:
       run: |
         echo "${{ secrets.FIREBASE_CONFIG }}" > ./config/firebase.ts
 
-    - name: Build Android
-      run: |
-        expo build:android --non-interactive
-
     - name: Build iOS
       run: |
         expo build:ios --non-interactive
